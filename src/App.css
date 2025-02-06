@@ -1,0 +1,70 @@
+:root,
+html[data-theme="light"] {
+  --primary-bg: #cccccc;
+  --primary-txt: #1a1a1a;
+
+  --btn-color: hsl(213, 50%, 40%);
+  --btn-hover-text: #cccccc;
+}
+
+html[data-theme="dark"] {
+  --primary-bg: #1a1a1a;
+  --primary-txt: #cccccc;
+
+  --btn-color: hsl(213, 86%, 60%);
+  --btn-hover-text: #1a1a1a;
+}
+
+body {
+  background-color: var(--primary-bg);
+  color: var(--primary-txt);
+}
+
+.dropdown-menu,
+.dropdown-item {
+  background-color: var(--primary-bg);
+  color: var(--primary-txt);
+}
+
+.dropdown-menu {
+  border-color: var(--primary-txt);
+}
+
+.form-control,
+.form-control:focus {
+  background-color: var(--primary-bg);
+  color: var(--primary-txt);
+  border-color: var(--primary-txt);
+}
+
+.btn {
+  background-color: transparent;
+  color: var(--btn-color);
+  border-color: var(--btn-color);
+  letter-spacing: 2px;
+}
+
+.btn:hover {
+  background-color: var(--btn-color);
+  color: var(--btn-hover-text);
+  border-color: var(--btn-hover-text);
+}
+
+.between {
+  display: flex;
+  justify-content: space-between;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 710px) {
+  .shuffle-btn {
+    width: 100%;
+    margin-bottom: 7px;
+  }
+}
